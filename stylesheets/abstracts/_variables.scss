@@ -2,10 +2,6 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -13,8 +9,6 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
 
 
 
@@ -40,14 +34,9 @@ $dark-grey: rgb(68, 68, 68) !default;
 
 
 
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map
@@ -61,11 +50,15 @@ $breakpoints: (
 
 
 
-
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+// ------------------------------------------------------------------------
+
+
+$font-navbar-cinzel: 'Cinzel', serif;
+$font-home-titre-baskerville: 'Libre Baskerville', serif;
+$font-p: 'Playfair Display', serif;
