@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+  figure {
+    img {
+      width: 10rem;
+      height: auto;
+    }
+  }
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+
+}
