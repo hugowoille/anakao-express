@@ -1,0 +1,70 @@
+.splashscreen_bateaux {
+    position: relative;
+    figure {
+        img {
+            width: 100vw;
+            max-width: 100%;
+            height: 100vh;
+            margin:0 auto;
+            display:block;
+            object-fit: cover;
+            -webkit-box-shadow: 1px 13px 15px -4px #000000;
+            box-shadow: 1px 13px 15px -4px #000000;
+        }
+    }
+    h2 {
+        @include transparency-effect;
+    }
+}
+.bateaux_content{
+    height:100vh;
+    background-color: #f5fee4;
+}
+
+
+
+
+
+// .photostudio {
+//     margin-left: 5vw;
+//     display: grid;
+//     width: 90vw;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     grid-template-areas:
+//         "stud1 stud2 stud3"
+//         "stud4 stud5 stud6";
+//     gap: 2vw;
+// }
+// .photostudio article{
+//   height:50vh;
+// }
+// .tof1 {
+//     grid-area: stud1;
+// }
+// .tof2 {
+//     grid-area: stud2;
+// }
+// .tof3 {
+//     grid-area: stud3;
+// }
+// .tof4 {
+//     grid-area: stud4;
+// }
+// .tof5 {
+//     grid-area: stud5;
+// }
+// .tof6 {
+//     grid-area: stud6;
+// }
+// .i1 {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//     border: 1px solid black;
+//     transition: 0.5s;
+// }
+
+// $font-navbar-cinzel: 'Cinzel', serif;
+// $font-home-titre-baskerville: 'Libre Baskerville', serif;
+// $font-p: 'Playfair Display', serif;
