@@ -31,4 +31,24 @@
     @content;
   }
 }
-
+@mixin transparency-effect {
+  position: absolute;
+  top: 65vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 20vh;
+  line-height: 20vh;
+  font-family: $font-home-titre-baskerville;
+  font-size: 2rem;
+  color: white;
+  padding-left: 6vw;
+  &::after {
+    content: "";
+    width: 20vw;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 13vh;
+    left: 6vw;
+  }
+}
