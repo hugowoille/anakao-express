@@ -3,21 +3,25 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 3rem;
+
+    position: sticky;
+    top: 0px;
+
   figure {
     img {
       width: 10rem;
       height: auto;
+      margin: 0.5rem 0;
     }
   }
-}
-
-nav {
-    position: sticky;
-    top: 0px;
 }
 
 nav ul {
     display: flex;
     gap: 4rem;
+    font-size: $font-size-navbar;
+    font-family: $font-navbar-cinzel;
+    font-weight: bold;
+    letter-spacing: $letter-spacing-navbar;
 
 }
