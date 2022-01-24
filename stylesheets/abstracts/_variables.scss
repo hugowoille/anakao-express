@@ -56,9 +56,14 @@ $breakpoints: (
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
 
-// ------------------------------------------------------------------------
 
-
+//------------------------------------------------------------------------------------------------
 $font-navbar-cinzel: 'Cinzel', serif;
 $font-home-titre-baskerville: 'Libre Baskerville', serif;
 $font-p: 'Playfair Display', serif;
+
+//------------------------------------------------
+$font-size-navbar: 1.4em;
+
+//------------------------------------------------
+$letter-spacing-navbar: .06em;

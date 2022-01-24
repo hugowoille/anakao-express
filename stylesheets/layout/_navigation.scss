@@ -19,5 +19,9 @@ header {
 nav ul {
     display: flex;
     gap: 4rem;
+    font-size: $font-size-navbar;
+    font-family: $font-navbar-cinzel;
+    font-weight: bold;
+    letter-spacing: $letter-spacing-navbar;
 
 }
