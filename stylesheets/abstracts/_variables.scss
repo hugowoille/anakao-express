@@ -59,11 +59,16 @@ $base-url: '/assets/' !default;
 
 //------------------------------------------------------------------------------------------------
 $font-navbar-cinzel: 'Cinzel', serif;
-$font-home-titre-baskerville: 'Libre Baskerville', serif;
+$font-titre-montserrat: 'Montserrat', sans-serif;
 $font-p: 'Playfair Display', serif;
 
 //------------------------------------------------
 $font-size-navbar: 1.4em;
+$font-size-h1: 3em;
+$font-size-p: 1.3em; 
 
 //------------------------------------------------
 $letter-spacing-navbar: .06em;
+
+//------------------------------------------------
+$line-height-p: 1.5;
