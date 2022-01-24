@@ -1,5 +1,18 @@
 .splashscreen_bateaux {
     position: relative;
+    width:100vw;
+    max-width: 100%;
+    .sidebar_boat{
+        background-color:#222222;
+        width:25vw;
+        height:100vh;
+        position:absolute;
+        h2{
+            position:absolute;
+            color:white;
+            font-family: ;
+        }
+    }
     figure {
         img {
             width: 100vw;
@@ -8,17 +21,13 @@
             margin:0 auto;
             display:block;
             object-fit: cover;
-            -webkit-box-shadow: 1px 13px 15px -4px #000000;
-            box-shadow: 1px 13px 15px -4px #000000;
+      
         }
-    }
-    h2 {
-        @include transparency-effect;
     }
 }
 .bateaux_content{
     height:100vh;
-    background-color: #f5fee4;
+    background-color: #fdfedb;
 }
 
 
