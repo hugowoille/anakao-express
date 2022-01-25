@@ -4,7 +4,8 @@ header {
   align-items: center;
   margin: 1rem 3rem;
 
-  position: sticky;
+  position: fixed;
+  width:100vw;
   top: 0px;
   z-index: 1000;
 
@@ -26,6 +27,7 @@ nav ul {
   letter-spacing: $letter-spacing-navbar;
   color: black;
   li {
+    margin-right:5vw;
     padding-bottom: 5px;
     background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat top / 0
       100%;
