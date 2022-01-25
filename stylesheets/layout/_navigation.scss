@@ -2,21 +2,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 3rem;
 
-    position: sticky;
+    position: fixed;
     top: 0px;
+    z-index: 1;
+    width: 100vw;
+    // background-color: rgba(0, 0, 0, 0.144);
 
   figure {
     img {
       width: 10rem;
       height: auto;
-      margin: 0.5rem 0;
+      margin: $margin-navbar-top-down 0 $margin-navbar-top-down $margin-navbar-left-right;
     }
   }
 }
 
-nav ul {
+nav {
+  // margin-left: $margin-navbar-left-right;
+  margin-right: $margin-navbar-left-right;
+}
+  ul {
     display: flex;
     gap: 4rem;
     font-size: $font-size-navbar;

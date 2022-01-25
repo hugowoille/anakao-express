@@ -1,3 +1,79 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//--------------------------------
+
+body {
+  overflow: hidden;
+  color: white;
+}
+
+//--------------------------------
+
 .parallax__container {
-    
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+.parallax__group {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100vw;
+  z-index: -1;
+  // padding: 25% 0 25%;
+}
+
+.parallax__group::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/temp-map.png");
+  background-size: cover;
+  background-position: 50% 60%;
+  transform: translateZ(-5px) scale(1.5);
+  min-height: 100vh;
+}
+
+
+//--------------------------------
+
+.trajet__presentation-txt {
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 20rem;
+  gap: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.562);
+  padding: 15% 3rem 20%;
+}
+
+// .trajet__presentation-txt::before {
+//     content:"";
+//     position: absolute;
+//     z-index: -1;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: rgba(0, 0, 0, 0.37);
+//     // border: 2px solid red;
+//     padding: 100vh 23vh;
+// }
+
+.trajet__content {
+  background-color: rgb(85, 82, 82);
+
+  padding: 5% 25%;
+
+  .para_p {
+    padding-bottom: 3rem;
+  }
 }

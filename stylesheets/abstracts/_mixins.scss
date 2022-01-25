@@ -31,6 +31,8 @@
     @content;
   }
 }
+
+// ----------------------------------------------------------------------
 @mixin transparency-effect {
   position: absolute;
   top: 65vh;
@@ -52,3 +54,5 @@
     left: 6vw;
   }
 }
+
+
