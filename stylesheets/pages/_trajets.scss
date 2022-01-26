@@ -35,7 +35,7 @@ body {
   background-image: url("../img/temp-map.png");
   background-size: cover;
   background-position: 50% 60%;
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-7px) scale(1.8);
   min-height: 100vh;
 }
 
@@ -43,7 +43,6 @@ body {
 //--------------------------------
 
 .trajet__presentation-txt {
-  box-sizing: border-box;
   position: relative;
   top: 0;
   display: flex;
@@ -53,7 +52,7 @@ body {
   gap: 3rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.562);
-  padding: 15% 3rem 20%;
+  padding: 20% 3rem 15%;
 }
 
 // .trajet__presentation-txt::before {
