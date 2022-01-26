@@ -1,34 +1,27 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 //--------------------------------
 
-body {
+.trajets__body {
   overflow: hidden;
   color: white;
 }
 
 //--------------------------------
 
-.parallax__container {
+.trajets__parallax__container {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
 }
 
-.parallax__group {
+.trajets__parallax__group {
   position: relative;
   transform-style: preserve-3d;
   width: 100vw;
   z-index: -1;
-  // padding: 25% 0 25%;
 }
 
-.parallax__group::before {
+.trajets__parallax__group::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -39,35 +32,42 @@ body {
   min-height: 100vh;
 }
 
-
 //--------------------------------
 
-.trajet__presentation-txt {
+.trajets__presentation-txt {
   position: relative;
   top: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 20rem;
   gap: 3rem;
+  max-width: min-content;
+  padding: 11% 2rem;
+
+
   color: white;
   background-color: rgba(0, 0, 0, 0.562);
-  padding: 20% 3rem 15%;
+
+  h1 {
+    font-size: 5em;
+  }
+
+  p {
+    font-family:$font-titre-montserrat;
+    flex-basis: 20em;
+  }
+
+  a {
+    font-family:$font-titre-montserrat;
+    font-size: 1.3em;
+    align-self: center;
+    border: 1px solid white;
+    padding: 1rem;
+  }
+
 }
 
-// .trajet__presentation-txt::before {
-//     content:"";
-//     position: absolute;
-//     z-index: -1;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     background-color: rgba(0, 0, 0, 0.37);
-//     // border: 2px solid red;
-//     padding: 100vh 23vh;
-// }
-
-.trajet__content {
+.trajets__content {
   background-color: rgb(85, 82, 82);
 
   padding: 5% 25%;
