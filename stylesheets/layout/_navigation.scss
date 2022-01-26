@@ -1,44 +1,33 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  position: fixed;
-  width:100vw;
-  top: 0px;
-  z-index: 1000;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100vw;
+    // background-color: rgba(0, 0, 0, 0.144);
 
   figure {
     img {
       width: 7rem;
       height: auto;
-      margin: 0.5rem 0;
+      margin: $margin-navbar-top-down 0 $margin-navbar-top-down $margin-navbar-left-right;
     }
   }
 }
 
-nav ul {
-  display: flex;
-  gap: 4rem;
-  font-size: $font-size-navbar;
-  font-family: $font-navbar-cinzel;
-  font-weight: bold;
-  letter-spacing: $letter-spacing-navbar;
-  color: black;
-  li {
-    margin-right:5vw;
-    padding-bottom: 5px;
-    background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat top / 0
-      100%;
-    transition: background-size 0.5s;
-    &:hover {
-      background-size: 100% 100%;
-    }
-    a{
-      &:hover{
-        color:black;
-      }
-    }
-  }
+nav {
+  // margin-left: $margin-navbar-left-right;
+  margin-right: $margin-navbar-left-right;
+}
+  ul {
+    display: flex;
+    gap: 4rem;
+    font-size: $font-size-navbar;
+    font-family: $font-navbar-cinzel;
+    font-weight: bold;
+    letter-spacing: $letter-spacing-navbar;
+
 }

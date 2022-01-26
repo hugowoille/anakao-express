@@ -1,3 +1,78 @@
-.parallax__container {
-    
+//--------------------------------
+
+.trajets__body {
+  overflow: hidden;
+  color: white;
+}
+
+//--------------------------------
+
+.trajets__parallax__container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+.trajets__parallax__group {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100vw;
+  z-index: -1;
+}
+
+.trajets__parallax__group::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/temp-map.png");
+  background-size: cover;
+  background-position: 50% 60%;
+  transform: translateZ(-7px) scale(1.8);
+  min-height: 100vh;
+}
+
+//--------------------------------
+
+.trajets__presentation-txt {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: min-content;
+  padding: 11% 2rem;
+
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.562);
+
+  h1 {
+    font-size: 5em;
+  }
+
+  p {
+    font-family:$font-titre-montserrat;
+    flex-basis: 20em;
+  }
+
+  a {
+    font-family:$font-titre-montserrat;
+    font-size: 1.3em;
+    align-self: center;
+    border: 1px solid white;
+    padding: 1rem;
+  }
+
+}
+
+.trajets__content {
+  background-color: rgb(85, 82, 82);
+
+  padding: 5% 25%;
+
+  .para_p {
+    padding-bottom: 3rem;
+  }
 }
