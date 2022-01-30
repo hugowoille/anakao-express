@@ -9,7 +9,7 @@
     z-index: 0;
     .sidebar_boat {
         background-color: #222222;
-        width: 25vw;
+        width: 25%;
         height: 100%;
         position: absolute;
         display: grid;
@@ -65,28 +65,27 @@
     }
 }
 .bateaux_content {
-
-    section {
+    .boat_stuff {
         height: 100vh;
-        padding-top:20vh ;
+        padding-top: 20vh;
         .separate_boat {
             height: 3px;
             width: 300px;
             background-color: #222222;
             margin: 0 auto;
-           
         }
-        h2{
+        h2 {
             text-align: center;
-            font-family:$font-p ;
-            font-size:2rem;
+            font-family: $font-p;
+            font-size: 2rem;
             margin: 50px 0 50px 0;
         }
-        p{
+        p {
             font-family: $font-titre-montserrat;
             font-size: 1rem;
             text-align: center;
-            margin-bottom:50px;
+            margin-bottom: 50px;
+            margin-top: 30px;
         }
     }
 }
@@ -97,29 +96,89 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-wrap:wrap;
-    gap:20px;
+    flex-wrap: wrap;
+    gap: 20px;
     li {
         flex-basis: 0;
         figure {
             img {
-                width: 200px;
+                width: 150px;
             }
         }
-        h3{
-            margin-top:20px;
+        h3 {
+            margin-top: 20px;
             margin-bottom: 20px;
             text-align: center;
-            font-family:$font-p;
+            font-family: $font-p;
             font-size: 1.4rem;
             align-items: center;
             justify-items: center;
         }
     }
 }
-@media (max-width: 900px){
-    .picto_boat{
-    padding: 0 130px 0 130px;
+@media (max-width: 900px) {
+    .bateaux_content {
+        .boat_stuff {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .picto_boat {
+                li {
+                    h3 {
+                        margin: 0;
+                        font-size: 1rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.boat_list {
+    .article_leftside {
+        height: 80vh;   
+        width: 100vw;
+        position:relative;
+        max-width: 100%;
+       
+        img{
+            width:70vw;
+            height:800px;
+            object-fit: cover;
+            position:absolute;
+            top:0%;
+            right:0;
+        }
+        .flex_article {
+            width:30vw;
+            background-color: #222222;
+            height:800px;
+            padding:5vw;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h2 {
+                font-family: $font-titre-montserrat;
+                color: #fdfedb;
+                font-size: 2rem;
+                
+            }
+            p {
+
+                font-family: $font-titre-montserrat;
+                color: #fdfedb;
+                font-size: 0.9rem;
+                margin-bottom:auto;
+                
+            }
+            .surlignage{
+                width:20vw;
+                height:3px;
+                background-color: #fdfedb;
+                margin-bottom:auto;
+            }
+        }
     }
 }
 
