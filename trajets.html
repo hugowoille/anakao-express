@@ -118,26 +118,20 @@
                             </p>
                         </article>
 
-                        <article class="trajets__principal-map-and-button">
+                        <article id="mapwithbutton" class="trajets__principal-map-and-button">
                             <figure class="trajets__principal-map-fig">
                                 <img class="general__img trajets__principal-map-img"
                                     src="img/trajets/temp-map-small-transp.png"
                                     alt="carte côte madagascar montrant Anakao, Tulear">
                             </figure>
 
-                            <button id="myBtn1" class="general__button button1-position"></button>
+                            <button class="general__button button1-position" onclick=""></button>
                             <button class="general__button button2-position" onclick=""></button>
                             <button class="general__button button3-position" onclick=""></button>
 
-                            <button id="myBtn">Try it</button>
-
                             <script>
-                                const element = document.getElementByClassName("general__button");
-                                element.addEventListener("click", myFunction);
-
-                                function myFunction() {
-                                    console.log("ouais ok c'est cool ça marche");
-                                }
+                                const mapAndButton = document.getElementById("mapwithbutton");
+                                mapAndButton.addEventListener("click", maFunctionName);
                             </script>
 
                         </article>
