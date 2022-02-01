@@ -1,19 +1,20 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-    width: 100vw;
-    // background-color: rgba(0, 0, 0, 0.144);
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100vw;
+  // background-color: rgba(0, 0, 0, 0.144);
 
   figure {
     img {
       width: 7rem;
       height: auto;
-      margin: $margin-navbar-top-down 0 $margin-navbar-top-down $margin-navbar-left-right;
+      margin: $margin-navbar-top-down 0 $margin-navbar-top-down
+        $margin-navbar-left-right;
     }
   }
 }
@@ -21,7 +22,7 @@ header {
 nav {
   // margin-left: $margin-navbar-left-right;
   margin-right: $margin-navbar-left-right;
-}
+  
   ul {
     display: flex;
     gap: 4rem;
@@ -29,5 +30,5 @@ nav {
     font-family: $font-navbar-cinzel;
     font-weight: bold;
     letter-spacing: $letter-spacing-navbar;
-
+  }
 }
