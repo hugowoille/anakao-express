@@ -4,13 +4,13 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
+  'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  'Monaco', monospace !default;
 
 /// Copy text color
 /// @type Color
@@ -32,12 +32,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -48,14 +45,11 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
-
 
 //------------------------------------------------------------------------------------------------
 $font-navbar-cinzel: 'Cinzel', serif;
@@ -65,11 +59,11 @@ $font-p: 'Playfair Display', serif;
 //------------------------------------------------
 $font-size-navbar: 1.5em;
 $font-size-h1: 3em;
-$font-size-p: 1.3em; 
+$font-size-p: 1.3em;
 
 //------------------------------------------------
-$letter-spacing-navbar: .07em;
-$letter-spacing-h1: .05em;
+$letter-spacing-navbar: 0.07em;
+$letter-spacing-h1: 0.05em;
 
 //------------------------------------------------
 $line-height-p: 1.6;
@@ -77,7 +71,14 @@ $line-height-p: 1.6;
 //------------------------------------------------
 $margin-navbar-top-down: 0.5rem;
 $margin-navbar-left-right: 3rem;
+$margin-article: 2rem;
+$margin-p: 1rem;
 
 //------------------------------------------------
 $font-color-sidebar: #fdfedb;
+$font-color-small-text: #747474;
+
+//------------------------------------------------
+$color-dark-drey: rgb(41, 41, 41);
 $color-bg-articles:#222222;
+
