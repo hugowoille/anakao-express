@@ -21,6 +21,9 @@ let anakao = {
 // target what's infront of eventlistener
 
 function funcPrincipalChange(paramFunc) {
+
+  console.log(varName);
+
   let whichButton = paramFunc.target;
   let imgToChange = document.getElementById("trajets__principal-img");
   let hToChange = document.getElementById("trajets__principal-h2");
