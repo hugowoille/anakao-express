@@ -8,5 +8,6 @@
     "humans.txt": true,
     "favicon.ico": true,
     "browserconfig.xml": true
-  }
+  },
+  "liveServer.settings.port": 5502
 }
