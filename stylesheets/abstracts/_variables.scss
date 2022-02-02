@@ -70,12 +70,13 @@ $letter-spacing-h1: 0.05em;
 $line-height-p: 1.6;
 
 //------------------------------------------------
+
 $margin-navbar-top-down: 0.5rem;
 $margin-navbar-left-right: 5rem;
 
 //------------------------------------------------
 $font-color-sidebar: #fdfedb;
-<<<<<<< HEAD
+$color-bg-articles:#222222;
 
 //------------------------------------------------
 $shadow-box-text: 2px 4px 15px rgba(61, 56, 56, 0.3),
@@ -83,7 +84,6 @@ $shadow-box-text: 2px 4px 15px rgba(61, 56, 56, 0.3),
 
 //------------------------------------------------
 // Buttons trajets
-
 $size-side: 1px;
 $size-padding: 0.5rem;
 $size-border-shadow: 14px;
@@ -92,6 +92,3 @@ $color-background-hover: peru;
 $color-border-box: rgba(151, 145, 140, 0.788);
 $color-transparent-border-box: rgba(0, 0, 0, 0);
 $transition-time: 0.3s;
-=======
-$color-bg-articles:#222222;
->>>>>>> d0009a74485189cc1773535887b800013ad92ffb

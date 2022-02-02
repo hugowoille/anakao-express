@@ -1,6 +1,5 @@
 // PARALLAX ========================================================================================
 // =================================================================================================
-
 .trajets__body {
   overflow: hidden;
   color: black;
@@ -37,9 +36,9 @@
 .trajets__presentation-txt {
   position: relative;
   top: 0;
-  @include flex-modulable(column, center, null, 3rem);
+  @include flex-modulable(column, center, null, 5rem);
   max-width: min-content;
-  padding: 15% 2rem 7%;
+  padding: 10% 4rem 10%;
   // min-height: 95vh;
   color: white;
   background-color: rgba(40, 39, 43, 0.527);
@@ -58,12 +57,12 @@
   //------------------
 
   h1 {
-    font-size: 5em;
+    font-size: 4em;
     text-shadow: $shadow-box-text;
   }
 
   p {
-    flex-basis: 20em;
+    flex-basis: 18em;
     font-family: $font-titre-montserrat;
     margin: 0 0 0 1rem;
   }
@@ -71,8 +70,8 @@
   a {
     align-self: center;
     font-family: $font-titre-montserrat;
-    font-size: 1.3em;
-    padding: 1rem;
+    font-size: 1.5em;
+    padding: 0.8rem;
     border: 1px solid white;
     box-shadow: $shadow-box-text;
   }
@@ -96,21 +95,25 @@
     margin-bottom: 3rem;
 
     h1 {
-      font-size: 2.8rem;
       position: relative;
+      font-size: 2.2rem;
       margin-bottom: 2rem;
     }
     h1:after {
-      content: "";
       position: absolute;
-      inset: 120% 25% auto 25%;
+      content: "";
+      inset: 130% auto auto 50%;
+      transform: translate(-50%, -50%);
+
       background-color: white;
+
       height: 3px;
-      width: 50%;
+      width: 30%;
     }
 
     p {
       font-size: 1.5em;
+      margin-bottom: 2rem;
     }
 
     strong {
@@ -137,7 +140,7 @@
 
   h2 {
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 
   P {
@@ -148,6 +151,7 @@
   .trajets__principal-environment-article-fig {
     img {
       border-radius: 0.5rem;
+      aspect-ratio: 1 / 0.8;
     }
   }
 }
@@ -161,7 +165,6 @@
 }
 
 // BUTTONS----------------------------------------------------------------
-
 .trajets__principal-map-and-button {
   position: relative;
 }
@@ -184,12 +187,16 @@
 }
 
 .general__button:hover {
-  transform-origin: center;
+  background-color: rgb(143, 100, 56);
+}
+
+.button-on-click {
   background-color: $color-background-hover;
   border: $size-border-shadow solid $color-transparent-border-box;
   box-shadow: 0 0 0 $size-border-shadow $color-border-box;
 }
 
+// Positions ----------------------------------
 .button1-position {
   position: absolute;
   top: 1%;

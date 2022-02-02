@@ -29,9 +29,9 @@
 
 <body class="trajets__body">
     <!-- ------------------------------------------------------------ -->
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> -->
     <!-- ----------------------------- -->
     <script type="text/javascript" src="js/trajets.js"></script>
     <!-- ------------------------------------------------------------ -->
@@ -104,14 +104,15 @@
                         <article class="trajets__principal-environement-article">
 
                             <figure class="trajets__principal-environment-article-fig">
-                                <img class="general__img  trajets__principal-enviroment-article-img"
+                                <img id="trajets__principal-img"
+                                    class="general__img  trajets__principal-enviroment-article-img"
                                     src="img/trajets/temp_Viaggi-sub-in-Madagascar.jpg" alt="">
                             </figure>
 
-                            <h2 class="general__h2">
+                            <h2 id="trajets__principal-h2" class="general__h2">
                                 Lorem, ipsum.
                             </h2>
-                            <p class="general__p">
+                            <p id="trajets__principal-p" class="general__p">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Minima rerum voluptatum iste nisi veritatis vel debitis perspiciatis cum,
                                 vitae totam!
@@ -120,8 +121,7 @@
 
                         <article id="mapwithbutton" class="trajets__principal-map-and-button">
                             <figure class="trajets__principal-map-fig">
-                                <img class="general__img trajets__principal-map-img"
-                                    src="img/trajets/temp-map-small-transp.png"
+                                <img class="general__img" src="img/trajets/temp-map-small-transp.png"
                                     alt="carte côte madagascar montrant Anakao, Tulear">
                             </figure>
 
@@ -130,8 +130,11 @@
                             <button class="general__button button3-position" onclick=""></button>
 
                             <script>
-                                const mapAndButton = document.getElementById("mapwithbutton");
-                                mapAndButton.addEventListener("click", maFunctionName);
+                                document.getElementById("mapwithbutton").addEventListener("click", funcPrincipalChange);
+                            // can also do : 
+                            // let varName = document.getElementsByClassName("trajets__principal-map-and-button")[O];
+                            // array so need to get the key.
+                            // varName.addEventListener("click", funcPrincipalChange);
                             </script>
 
                         </article>
@@ -140,8 +143,6 @@
                 </div>
 
             </section>
-
-
 
 
             <section class="temp__text-fill">
@@ -223,33 +224,39 @@
 
         </main>
 
+        <footer>
+            <ul class="adress">
+                <li>Anakao Express</li>
+                <li>137 Avenue du président Liautaye<br>Mahavatse Madagascar</li>
+                <li><a href="index.html">
+                        <figure><img src="img/logo.svg" alt="logo anakao express"></figure>
+                    </a></li>
+                <li>06.48.65.23.17</li>
+                <li>w.patrimoine@wanadoo.fr</li>
+            </ul>
+            <ul class="summary">
+                <li>Sommaire</li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="trajets.html">Les trajets</a></li>
+                <li><a href="bateaux.html">Les bateaux</a></li>
+                <li><a href="tarifs.html">Tarfis & réservations</a></li>
+            </ul>
+            <ul class="useful_links">
+                <li>Liens utiles</li>
+                <li><a href="">Anakaomag</a></li>
+                <li><a href="">Tuléar&cie</a></li>
+                <li>Suivez nous!</li>
+                <li><a href="https://www.facebook.com/anakaoexpress">
+                        <figure><img src="img/fbn.svg" alt="logo de facebook"></figure>
+                    </a></li>
+            </ul>
+        </footer>
+
         <!-- ------------------------------ -->
     </div>
 
 
-    <footer>
-        <ul class="adress">
-          <li>Anakao Express</li>
-          <li>137 Avenue du président Liautaye<br>Mahavatse Madagascar</li>
-          <li><a href="index.html"><figure><img src="img/logo.svg" alt="logo anakao express"></figure></a></li>
-          <li>06.48.65.23.17</li>
-          <li>w.patrimoine@wanadoo.fr</li>
-        </ul>
-        <ul class="summary">
-          <li>Sommaire</li>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="trajets.html">Les trajets</a></li>
-          <li><a href="bateaux.html">Les bateaux</a></li>
-          <li><a href="tarifs.html">Tarfis & réservations</a></li>
-        </ul>
-        <ul class="useful_links">
-          <li>Liens utiles</li>
-          <li><a href="">Anakaomag</a></li>
-          <li><a href="">Tuléar&cie</a></li>
-          <li>Suivez nous!</li>
-          <li><a href="https://www.facebook.com/anakaoexpress"><figure><img src="img/fbn.svg" alt="logo de facebook"></figure></a></li>
-        </ul>
-      </footer>
+
 
 
 </body>
