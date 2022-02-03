@@ -49,7 +49,7 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: "/assets/" !default;
+$base-url: '/assets/' !default;
 
 //------------------------------------------------------------------------------------------------
 $font-navbar-cinzel: "Cinzel", serif;
@@ -73,9 +73,15 @@ $line-height-p: 1.6;
 
 $margin-navbar-top-down: 0.5rem;
 $margin-navbar-left-right: 5rem;
+$margin-article: 2rem;
+$margin-p: 1rem;
 
 //------------------------------------------------
 $font-color-sidebar: #fdfedb;
+$color-bg-articles:#222222;
+
+//------------------------------------------------
+$color-dark-drey: rgb(41, 41, 41);
 $color-bg-articles:#222222;
 
 //------------------------------------------------
