@@ -1,78 +1,235 @@
-//--------------------------------
-
+// PARALLAX ========================================================================================
+// =================================================================================================
 .trajets__body {
   overflow: hidden;
-  color: white;
+  color: black;
 }
-
-//--------------------------------
 
 .trajets__parallax__container {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
-}
 
-.trajets__parallax__group {
-  position: relative;
-  transform-style: preserve-3d;
-  width: 100vw;
-  z-index: -1;
+  .trajets__parallax__group {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100vw;
+    z-index: -1;
+    // padding: 25% 0 25%;
+  }
 }
-
 .trajets__parallax__group::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../img/temp-map.png");
+  background-image: url("../img/trajets/temp-map2.png");
   background-size: cover;
-  background-position: 50% 60%;
+  background-position: 50% 40%;
   transform: translateZ(-7px) scale(1.8);
   min-height: 100vh;
+  // max-height: 100vh;
 }
 
-//--------------------------------
+// Side text ----------------------------------------------------------------
 
 .trajets__presentation-txt {
   position: relative;
   top: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 3rem;
+  @include flex-modulable(column, center, null, 5rem);
   max-width: min-content;
-  padding: 11% 2rem;
-
-
+  padding: 10% 4rem 10%;
+  // min-height: 95vh;
   color: white;
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(40, 39, 43, 0.527);
+
+  //------------------
+  @media only screen and (max-width: 800px) {
+    background-color: rgba(0, 0, 0, 0.384);
+    max-width: 100vw;
+    align-items: center;
+    padding: 35% 20% 0;
+
+    a {
+      visibility: hidden;
+    }
+  }
+  //------------------
 
   h1 {
-    font-size: 5em;
+    font-size: 4em;
+    text-shadow: $shadow-box-text;
   }
 
   p {
-    font-family:$font-titre-montserrat;
-    flex-basis: 20em;
+    flex-basis: 18em;
+    font-family: $font-titre-montserrat;
+    margin: 0 0 0 1rem;
   }
 
   a {
-    font-family:$font-titre-montserrat;
-    font-size: 1.3em;
     align-self: center;
+    font-family: $font-titre-montserrat;
+    font-size: 1.5em;
+    padding: 0.8rem;
     border: 1px solid white;
+    box-shadow: $shadow-box-text;
+  }
+}
+
+// LES TRAJETS ============================================================================
+// ========================================================================================
+
+.trajets__content {
+  color: white;
+  background-color: rgb(89, 89, 92);
+}
+
+// ==============================================
+// ==============================================
+.trajets__principal {
+  padding: 3% 0 4%;
+
+  .trajets__principal-header {
+    @include flex-modulable(column, null, center, 1rem);
+    margin-bottom: 3rem;
+
+    h1 {
+      position: relative;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+    h1:after {
+      position: absolute;
+      content: "";
+      inset: 130% auto auto 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: white;
+
+      height: 3px;
+      width: 30%;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 2rem;
+    }
+
+    strong {
+      color: orange;
+      font-size: 1.2em;
+    }
+  }
+}
+
+// GRID----------------------------------------------------------------
+.trajets__principal-grid-container {
+  margin: 0 auto;
+  max-width: 70rem;
+
+  .trajets__principal-grid {
+    @include grid-column-repeat(2, 220px, 1fr, 10rem);
+  }
+}
+
+// PHOTO & TXT----------------------------------------------------------------
+.trajets__principal-environement-article {
+  align-self: center;
+  position: relative;
+
+  h2 {
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+  }
+
+  P {
+    box-sizing: border-box;
     padding: 1rem;
   }
 
+  .trajets__principal-environment-article-fig {
+    img {
+      border-radius: 0.5rem;
+      aspect-ratio: 1 / 0.8;
+    }
+  }
 }
 
-.trajets__content {
-  background-color: rgb(85, 82, 82);
+// MAP----------------------------------------------------------------------
+.trajets__principal-map-fig {
+  img {
+    border-radius: 0.5rem;
+    aspect-ratio: 1 / 1.2;
+  }
+}
 
+// BUTTONS----------------------------------------------------------------
+.trajets__principal-map-and-button {
+  position: relative;
+}
+
+.general__button {
+  @include flex-modulable(null, center, center);
+  width: $size-side;
+  height: $size-side;
+  padding: $size-padding;
+  border-radius: 50%;
+
+  background-clip: padding-box;
+
+  background-color: $color-background;
+  border: $size-border-shadow solid $color-border-box;
+  box-shadow: 0 0 0 0 $color-transparent-border-box;
+
+  cursor: pointer;
+  transition: $transition-time ease-in-out;
+}
+
+.general__button:hover {
+  background-color: rgb(172, 112, 52);
+}
+
+.button-on-click {
+  background-color: $color-background-hover;
+  border: $size-border-shadow solid $color-transparent-border-box;
+  box-shadow: 0 0 0 $size-border-shadow $color-border-box;
+}
+
+// Positions ----------------------------------
+.button1-position {
+  position: absolute;
+  top: 1%;
+  left: 18%;
+}
+
+.button2-position {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+
+.button3-position {
+  position: absolute;
+  top: 90%;
+  left: 12%;
+}
+
+// ==============================================
+// ==============================================
+
+.temp__text-fill {
+  background-color: rgb(216, 214, 208);
+  color: black;
   padding: 5% 25%;
 
   .para_p {
     padding-bottom: 3rem;
   }
 }
+
+
+
+
+
+
