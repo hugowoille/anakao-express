@@ -69,7 +69,9 @@ function removeAnim(buttonClassToSkip, classToRemove) {
     if (buttonNodeList[i].classList.contains(buttonClassToSkip)) {
       continue;
     }
-    buttonNodeList[i].classList.remove(classToRemove);
+    if (buttonNodeList[i].classList.contains(classToRemove)) {
+      buttonNodeList[i].classList.remove(classToRemove);
+    }
     // console.log(buttonNodeList[i].classList);
   }
 }
