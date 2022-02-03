@@ -119,25 +119,26 @@
                             </p>
                         </article>
 
-                        <article class="trajets__principal-map-and-button js-buttons-map">
+                        <article class="trajets__principal-map-and-button js-buttons-container">
                             <figure class="trajets__principal-map-fig">
                                 <img class="general__img" src="img/trajets/temp-map-small-transp.png"
                                     alt="carte côte madagascar montrant Anakao, Tulear">
                             </figure>
 
-                            <button class="general__button button1-position" onclick=""></button>
-                            <button class="general__button button2-position" onclick=""></button>
-                            <button class="general__button button3-position" onclick=""></button>
+                            <button class="general__button button1-position"></button>
+                            <button class="general__button button2-position"></button>
+                            <button class="general__button button3-position"></button>
 
                             <script>
                                 // can also do : (need to add: id="mapwithbutton" to the 'main container')
                                 // document.getElementById("mapwithbutton").addEventListener("click", funcPrincipalChange);
-                             
+
                                 // array so need to get the key. 
                                 // can also use :
                                 // document.querySelectorAll('.js-buttons-map')[0];
-                            let mainMap = document.getElementsByClassName('js-buttons-map')[0];
-                            mainMap.addEventListener("click", funcPrincipalChange);
+                                // let mainMap = document.getElementsByClassName('js-buttons-map')[0];
+                                // mainMap.addEventListener("click", funcPrincipalChange);
+                                document.querySelector('.js-buttons-container').addEventListener("click", funcPrincipalChange);
                             </script>
 
                         </article>

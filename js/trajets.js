@@ -19,40 +19,65 @@ let anakao = {
 };
 
 // target what's infront of eventlistener
-
 function funcPrincipalChange(paramFunc) {
-
-  console.log(varName);
-
   let whichButton = paramFunc.target;
+
   let imgToChange = document.getElementById("trajets__principal-img");
   let hToChange = document.getElementById("trajets__principal-h2");
   let pToChange = document.getElementById("trajets__principal-p");
 
+  let button1 = whichButton.classList.contains("button1-position");
+  let button2 = whichButton.classList.contains("button2-position");
+  let button3 = whichButton.classList.contains("button3-position");
+
   if (whichButton.tagName == "BUTTON") {
     // console.log(whichButton);
-
-    if (whichButton.classList.contains("button1-position")) {
+    if (button1) {
       // console.log("c'est le bouton 1");
       imgToChange.src = tulear.img;
       hToChange.innerHTML = tulear.h;
       pToChange.innerHTML = tulear.p;
-    } else {
+
+      whichButton.classList.add("button-on-click");
+      removeAnim("button1-position", "button-on-click");
     }
-    if (whichButton.classList.contains("button2-position")) {
+    if (button2) {
       // console.log("c'est le bouton 2");
       imgToChange.src = stAugustin.img;
       hToChange.innerHTML = stAugustin.h;
       pToChange.innerHTML = stAugustin.p;
-    } else {
+
+      whichButton.classList.add("button-on-click");
+      removeAnim("button2-position", "button-on-click");
     }
-    if (whichButton.classList.contains("button3-position")) {
+    if (button3) {
       // console.log("c'est le bouton 3");
       imgToChange.src = anakao.img;
       hToChange.innerHTML = anakao.h;
       pToChange.innerHTML = anakao.p;
-    } else {
+
+      whichButton.classList.add("button-on-click");
+      removeAnim("button3-position", "button-on-click");
     }
   }
 }
 
+function removeAnim(buttonClassToSkip, classToRemove) {
+  let buttonNodeList = document.querySelectorAll(".general__button");
+  // console.log(buttonNodeList.length);
+  for (let i = 0; i < buttonNodeList.length; i++) {
+    if (buttonNodeList[i].classList.contains(buttonClassToSkip)) {
+      continue;
+    }
+    buttonNodeList[i].classList.remove(classToRemove);
+    // console.log(buttonNodeList[i].classList);
+  }
+}
+
+// whichButton.classList.add("button-on-click");
+
+// if (whichButton.classList.contains("button-on-click")) {
+//   whichButton.classList.remove("button-on-click");
+// }
+
+//
