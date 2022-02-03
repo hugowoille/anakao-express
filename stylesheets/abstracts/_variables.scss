@@ -4,13 +4,13 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-  'Monaco', monospace !default;
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
 
 /// Copy text color
 /// @type Color
@@ -40,9 +40,9 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
 ) !default;
 
 /// Relative or absolute URL where all assets are served from
@@ -52,13 +52,14 @@ $breakpoints: (
 $base-url: '/assets/' !default;
 
 //------------------------------------------------------------------------------------------------
-$font-navbar-cinzel: 'Cinzel', serif;
-$font-titre-montserrat: 'Montserrat', sans-serif;
-$font-p: 'Playfair Display', serif;
+$font-navbar-cinzel: "Cinzel", serif;
+$font-titre-montserrat: "Montserrat", sans-serif;
+$font-p: "Playfair Display", serif;
 
 //------------------------------------------------
 $font-size-navbar: 1.5em;
 $font-size-h1: 3em;
+$font-size-h2: 2.1em;
 $font-size-p: 1.3em;
 
 //------------------------------------------------
@@ -69,16 +70,31 @@ $letter-spacing-h1: 0.05em;
 $line-height-p: 1.6;
 
 //------------------------------------------------
+
 $margin-navbar-top-down: 0.5rem;
-$margin-navbar-left-right: 3rem;
+$margin-navbar-left-right: 5rem;
 $margin-article: 2rem;
 $margin-p: 1rem;
 
 //------------------------------------------------
 $font-color-sidebar: #fdfedb;
-$font-color-small-text: #747474;
+$color-bg-articles:#222222;
 
 //------------------------------------------------
 $color-dark-drey: rgb(41, 41, 41);
 $color-bg-articles:#222222;
 
+//------------------------------------------------
+$shadow-box-text: 2px 4px 15px rgba(61, 56, 56, 0.3),
+  -2px 0 15px rgba(61, 56, 56, 0.3);
+
+//------------------------------------------------
+// Buttons trajets
+$size-side: 1px;
+$size-padding: 0.5rem;
+$size-border-shadow: 14px;
+$color-background: rgb(0, 0, 0);
+$color-background-hover: peru;
+$color-border-box: rgba(151, 145, 140, 0.788);
+$color-transparent-border-box: rgba(0, 0, 0, 0);
+$transition-time: 0.4s;
