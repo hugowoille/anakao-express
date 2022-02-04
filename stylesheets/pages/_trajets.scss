@@ -49,6 +49,7 @@
     max-width: 100vw;
     align-items: center;
     padding: 35% 20% 0;
+    height: min
 
     a {
       visibility: hidden;
@@ -133,17 +134,19 @@
   }
 }
 
-// PHOTO & TXT----------------------------------------------------------------
+// ARTICLE PHOTO & TXT----------------------------------------------------------------
 .trajets__principal-environement-article {
   align-self: center;
   position: relative;
+  transition: opacity 0.25s;
+  opacity: 1;
 
   h2 {
     box-sizing: border-box;
     padding: 1rem 3rem;
   }
 
-  P {
+  p {
     box-sizing: border-box;
     padding: 1rem;
   }
@@ -154,6 +157,10 @@
       aspect-ratio: 1 / 0.8;
     }
   }
+}
+
+.trajet__principal-fade {
+  opacity: 0.1;
 }
 
 // MAP----------------------------------------------------------------------
