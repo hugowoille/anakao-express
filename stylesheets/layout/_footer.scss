@@ -7,9 +7,21 @@ footer{
     font-size: 1rem;
     font-family: $font-titre-montserrat;
     padding:70px;
+    .separate_footer{
+        width:1px;
+        background-color: #fdfedb;
+        height: auto;
+    }
     @media (max-width:870px) {
     flex-direction: column;
     align-items: center;
+    padding:20px;
+    .separate_footer{
+        width:100%;
+        background-color: #fdfedb;
+        height: 1px;
+        margin:50px 0 50px 0;
+    }
     }
     .adress, .summary, .useful_links{
         display:flex;
@@ -17,9 +29,10 @@ footer{
         justify-content: space-between;
         flex-basis: 200px;
         @media (max-width:870px) {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #fdfedb;
-            padding:30px;
+            
+            
+            padding:0;
+            
             flex-basis: 300px;
             align-self:stretch;
             &:last-child{
@@ -44,7 +57,6 @@ footer{
         }
     }
     .adress{
-        min-width: 270px;
         li{
             &:first-child{
                 font-weight: 900;
