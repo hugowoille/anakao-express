@@ -29,9 +29,9 @@
 
 <body class="trajets__body">
     <!-- ------------------------------------------------------------ -->
-    <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <!-- ----------------------------- -->
     <script type="text/javascript" src="js/trajets.js"></script>
     <!-- ------------------------------------------------------------ -->
@@ -80,13 +80,14 @@
             </section>
 
         </div>
-
         <!-- ---------------------------------------------------------------------------- -->
 
         <main class="trajets__content">
 
+            <!-- SECTION : TRAJET PRINCIPAL ------------------------------------------------ -->
             <section class="trajets__principal">
 
+                <!-- ARTICLE : Trajets header ------------------------ -->
                 <article class="trajets__principal-header">
                     <h1 class="general__h1">
                         Voyage quotidien
@@ -95,15 +96,13 @@
                         Trajets entre <strong>Anakao</strong>, <strong>St Augustin</strong>, <strong>Tulear</strong>.
                     </p>
                 </article>
-
-
+                
                 <div class="trajets__principal-grid-container">
-
                     <div class="trajets__principal-grid">
 
-                        <article class="trajets__principal-environement-article">
-
-                            <figure class="trajets__principal-environment-article-fig">
+                        <!-- ARTICLE : Picture & text ------------------------ -->
+                        <article class="trajets__principal-environement-article js-principal-article">
+                            <figure>
                                 <img class="general__img  js-trajets__img"
                                     src="img/trajets/temp_Viaggi-sub-in-Madagascar.jpg" alt="">
                             </figure>
@@ -117,16 +116,17 @@
                                 vitae totam!
                             </p>
                         </article>
-
+                        
+                        <!-- ARTICLE : MAP & Buttons ------------------------ -->
                         <article class="trajets__principal-map-and-button js-buttons-container">
                             <figure class="trajets__principal-map-fig">
                                 <img class="general__img" src="img/trajets/temp-map-small-transp.png"
                                     alt="carte côte madagascar montrant Anakao, Tulear">
-                            </figure>
 
-                            <button class="general__button button1-position"></button>
-                            <button class="general__button button2-position"></button>
-                            <button class="general__button button3-position"></button>
+                                <button class="general__button button0-position"></button>
+                                <button class="general__button button1-position"></button>
+                                <button class="general__button button2-position"></button>
+                            </figure>
 
                             <script>
                                 // can also do : (need to add: id="mapwithbutton" to the 'main container')
@@ -134,18 +134,19 @@
 
                                 // array so need to get the key. 
                                 // can also use :
-                                // document.querySelectorAll('.js-buttons-map')[0];
+                                // document.querySelectorAll('.js-buttons-container')[0];
+                                // Or
                                 // let mainMap = document.getElementsByClassName('js-buttons-map')[0];
                                 // mainMap.addEventListener("click", funcPrincipalChange);
                                 document.querySelector('.js-buttons-container').addEventListener("click", funcPrincipalChange);
                             </script>
-
                         </article>
 
                     </div>
                 </div>
 
             </section>
+
 
 
             <section class="temp__text-fill">
@@ -229,28 +230,32 @@
 
         <footer>
             <ul class="adress">
-              <li>Anakao Express</li>
-              <li>137 Avenue du président Liautaye<br>Mahavatse Madagascar</li>
-              <li>06.48.65.23.17</li>
-              <li>w.patrimoine@wanadoo.fr</li>
-              <li><a href="index.html"><figure><img src="img/logo.svg" alt="logo anakao express"></figure></a></li>
+                <li>Anakao Express</li>
+                <li>137 Avenue du président Liautaye<br>Mahavatse Madagascar</li>
+                <li>06.48.65.23.17</li>
+                <li>w.patrimoine@wanadoo.fr</li>
+                <li><a href="index.html">
+                        <figure><img src="img/logo.svg" alt="logo anakao express"></figure>
+                    </a></li>
             </ul>
             <ul class="summary">
-              <li>Sommaire</li>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="trajets.html">Les trajets</a></li>
-              <li><a href="bateaux.html">Les bateaux</a></li>
-              <li><a href="tarifs.html">Tarfis & réservations</a></li>
+                <li>Sommaire</li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="trajets.html">Les trajets</a></li>
+                <li><a href="bateaux.html">Les bateaux</a></li>
+                <li><a href="tarifs.html">Tarfis & réservations</a></li>
             </ul>
             <ul class="useful_links">
-              <li>Liens utiles</li>
-              <li><a href="">Anakaomag</a></li>
-              <li><a href="">Tuléar&cie</a></li>
-              <li>Suivez nous !</li>
-              <li><a href="https://www.facebook.com/anakaoexpress"><figure><img src="img/fbn.svg" alt="logo de facebook"></figure></a></li>
+                <li>Liens utiles</li>
+                <li><a href="">Anakaomag</a></li>
+                <li><a href="">Tuléar&cie</a></li>
+                <li>Suivez nous !</li>
+                <li><a href="https://www.facebook.com/anakaoexpress">
+                        <figure><img src="img/fbn.svg" alt="logo de facebook"></figure>
+                    </a></li>
             </ul>
-          </footer>
-        
+        </footer>
+
 
         <!-- ------------------------------ -->
     </div>
