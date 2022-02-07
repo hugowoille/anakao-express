@@ -2,11 +2,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
   top: 0px;
   z-index: 1;
   width: 100vw;
+  transition: 0.5s;
   // background-color: rgba(0, 0, 0, 0.144);
 
   figure {
@@ -14,7 +14,7 @@ header {
       width: 7rem;
       height: auto;
       margin: $margin-navbar-top-down 0 $margin-navbar-top-down
-        $margin-navbar-left-right;
+        144px;
     }
   }
 }
@@ -29,5 +29,10 @@ nav {
     font-family: $font-navbar-cinzel;
     font-weight: bold;
     letter-spacing: $letter-spacing-navbar;
+    align-items: center;
+    color:$color-bg-articles;
+   li{
+     
+   }
   }
 }
