@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../img/trajets/temp-map2.png");
+  background-image: url("../img/trajets/map-last-last.svg");
   background-size: cover;
   background-position: 50% 40%;
   transform: translateZ(-7px) scale(1.8);
@@ -121,7 +121,7 @@
 .trajets__principal-environement-article {
   align-self: center;
   position: relative;
-  transition: opacity .15s;
+  transition: opacity 0.15s;
   opacity: 1;
 
   h2 {
@@ -200,7 +200,6 @@ $media-trajet: 810px;
     }
   }
 }
-
 
 // ======================================
 // ======================================

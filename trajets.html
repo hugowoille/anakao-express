@@ -28,15 +28,14 @@
 </head>
 
 <body class="trajets__body">
-    <!-- ------------------------------------------------------------ -->
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
     <!-- ----------------------------- -->
-    <script type="text/javascript" src="js/trajets.js"></script>
-    <!-- ------------------------------------------------------------ -->
+    <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script> -->
+    <!-- ----------------------------- -->
 
-    <header>
+
+    <header id="header">
         <figure>
             <a href="index.html">
                 <img src="img/logo.svg" alt="logo Anakano express">
@@ -64,8 +63,11 @@
         </nav>
     </header>
 
+    <!-- <button class="ButtonFixed" onclick="checkvalues()">Click for JS console Check</button>
+    <button class="ButtonFixed button2" onclick="changeNav()">Click to apply JS change</button> -->
+
     <!-- ---------------------------------------------------------------------------- -->
-    <div class="trajets__parallax__container">
+    <div id="parallax-container" class="trajets__parallax__container">
 
         <div class="trajets__parallax__group">
 
@@ -82,6 +84,8 @@
         </div>
         <!-- ---------------------------------------------------------------------------- -->
 
+
+
         <main class="trajets__content">
 
             <!-- SECTION : TRAJET PRINCIPAL ------------------------------------------------ -->
@@ -96,7 +100,7 @@
                         Trajets entre <strong>Anakao</strong>, <strong>St Augustin</strong>, <strong>Tulear</strong>.
                     </p>
                 </article>
-                
+
                 <div class="trajets__principal-grid-container">
                     <div class="trajets__principal-grid">
 
@@ -116,7 +120,7 @@
                                 vitae totam!
                             </p>
                         </article>
-                        
+
                         <!-- ARTICLE : MAP & Buttons ------------------------ -->
                         <article class="trajets__principal-map-and-button js-buttons-container">
                             <figure class="trajets__principal-map-fig">
@@ -223,6 +227,17 @@
                     aperiam animi asperiores, a voluptatibus temporibus minima voluptas ipsa! Recusandae
                     nostrum, aut, voluptates est error iusto, eaque excepturi soluta quas maiores amet.
                 </p>
+                <p class="general__p para_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum veritatis
+                    nemo magni odio reprehenderit atque, esse animi porro suscipit vero nobis modi quis.
+                    Exercitationem quasi beatae, assumenda officia illum sunt. Cum voluptas maiores
+                    vitae eius hic inventore deleniti placeat perferendis quam ut nostrum maxime optio
+                    voluptatibus ab laboriosam, quia consectetur atque minus? Adipisci amet aut sint
+                    voluptates delectus aperiam? Veniam ab illum enim in libero nihil culpa explicabo
+                    perspiciatis veritatis non repellendus architecto excepturi nostrum porro voluptatem
+                    aperiam animi asperiores, a voluptatibus temporibus minima voluptas ipsa! Recusandae
+                    nostrum, aut, voluptates est error iusto, eaque excepturi soluta quas maiores amet.
+                </p>
             </section>
 
 
@@ -255,15 +270,14 @@
                     </a></li>
             </ul>
         </footer>
-
-
-        <!-- ------------------------------ -->
+        
     </div>
 
 
 
-
-
+    <!-- JAVA SCRIPT--------------------------------------- -->
+    <script type="text/javascript" src="js/trajets.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
 </body>
 
 </html>

@@ -32,16 +32,18 @@ function addAndRemoveEffect(clickedButton, buttonClassToSkip, classToAddAndRemov
   }
 }
 // ----------------------------------------------------
+
 function fadeInAndOutChangeContent(fadeclass, eIndexNum, cIndexNum, classSelector) {
   let articleToFade = document.querySelector(classSelector);
   articleToFade.classList.add(fadeclass);
 
-  setTimeout(function() {
-    let imgToChange = document.querySelectorAll(".js-trajets__img");
-    let hToChange = document.querySelectorAll(".js-trajets__h2");
-    let pToChange = document.querySelectorAll(".js-trajets__p");
-    //list of all img, h2, p element to change content from,
-    // select them with nodelist index
+  let imgToChange = document.querySelectorAll(".js-trajets__img");
+  let hToChange = document.querySelectorAll(".js-trajets__h2");
+  let pToChange = document.querySelectorAll(".js-trajets__p");
+  //list of all img, h2, p element to change content from,
+  // select them with nodelist index
+
+  setTimeout(function () {
     imgToChange[eIndexNum].src = imgTrajetsArray[cIndexNum];
     hToChange[eIndexNum].innerHTML = hTrajetsArray[cIndexNum];
     pToChange[eIndexNum].innerHTML = pTrajetsArray[cIndexNum];
@@ -50,7 +52,7 @@ function fadeInAndOutChangeContent(fadeclass, eIndexNum, cIndexNum, classSelecto
 }
 
 // FUNCTION : MAIN ------------------------------------------------------------------
-let stop = [-1];
+let stop = -1;
 
 function funcPrincipalChange(paramFunc) {
   let whichButton = paramFunc.target;
@@ -60,64 +62,20 @@ function funcPrincipalChange(paramFunc) {
   let button2 = whichButton.classList.contains("button2-position");
 
   if (whichButton.tagName == "BUTTON") {
-    if (button0 && stop[0] != 0) {
-      stop[0] = 0;
-      // console.log("button 0 = " + stop[0]);
+    if (button0 && stop != 0) {
+      stop = 0;
       addAndRemoveEffect(whichButton, "button0-position", "button-on-click");
-      fadeInAndOutChangeContent(
-        "trajet__principal-fade", 0, 0, ".js-principal-article");
+      fadeInAndOutChangeContent("trajet__principal-fade", 0, 0, ".js-principal-article");
     }
-
-    if (button1 && stop[0] != 1) {
-      stop[0] = 1;
-      // console.log("button 1 = " + stop[0]);
+    if (button1 && stop != 1) {
+      stop = 1;
       addAndRemoveEffect(whichButton, "button1-position", "button-on-click");
-      fadeInAndOutChangeContent(
-        "trajet__principal-fade", 0, 1, ".js-principal-article");
+      fadeInAndOutChangeContent("trajet__principal-fade", 0, 1, ".js-principal-article");
     }
-    if (button2 && stop[0] != 2) {
-      stop[0] = 2;
-      // console.log("button 2 = " + stop[0]);
+    if (button2 && stop != 2) {
+      stop = 2;
       addAndRemoveEffect(whichButton, "button2-position", "button-on-click");
-      fadeInAndOutChangeContent(
-        "trajet__principal-fade", 0, 2, ".js-principal-article");
+      fadeInAndOutChangeContent("trajet__principal-fade", 0, 2, ".js-principal-article");
     }
   }
 }
-
-// articleToFade.opacity = "1";
-//     console.log(articleToFade.opacity);
-
-// let stoptest = -1;
-
-// function funcPrincipalChange(paramFunc) {
-//   let whichButton = paramFunc.target;
-
-// let button0 = whichButton.classList.contains("button0-position");
-// let button1 = whichButton.classList.contains("button1-position");
-// let button2 = whichButton.classList.contains("button2-position");
-
-//   if (whichButton.tagName == "BUTTON") {
-//     if (button0 && stop != 0) {
-//       stoptest = 0;
-//       console.log("button 0 = " + stoptest);
-//       addAndRemoveEffect(whichButton, "button0-position", "button-on-click");
-//       fadeInAndOutChangeContent("trajet__principal-fade", 0, 0);
-//     } else {
-//       console.log("both conditions false")
-//     }
-
-//     if (button1 && stop != 1) {
-//       stoptest = 1;
-//       console.log("button 1 = " + stoptest);
-//       addAndRemoveEffect(whichButton, "button1-position", "button-on-click");
-//       fadeInAndOutChangeContent("trajet__principal-fade", 0, 1);
-//     }
-//     if (button2 && stop != 2) {
-//       stoptest = 2;
-//       console.log("button 2 = " + stoptest);
-//       addAndRemoveEffect(whichButton, "button2-position", "button-on-click");
-//       fadeInAndOutChangeContent("trajet__principal-fade", 0, 2);
-//     }
-//   }
-// }

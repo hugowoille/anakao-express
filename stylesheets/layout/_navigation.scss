@@ -1,3 +1,6 @@
+$transition-time-navbar: 0.4s;
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -5,9 +8,10 @@ header {
 
   position: fixed;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
-  // background-color: rgba(0, 0, 0, 0.144);
+  background-color: rgba(41, 39, 39, 0);
+  transition: background-color $transition-time-navbar ease-in-out;
 
   figure {
     img {
@@ -22,6 +26,7 @@ header {
 nav {
   // margin-left: $margin-navbar-left-right;
   margin-right: $margin-navbar-left-right;
+
   ul {
     display: flex;
     gap: 4rem;
@@ -29,5 +34,19 @@ nav {
     font-family: $font-navbar-cinzel;
     font-weight: bold;
     letter-spacing: $letter-spacing-navbar;
+
+    transition: background-color $transition-time-navbar ease-in-out, color $transition-time-navbar ease-in-out ;
   }
+}
+
+
+.scroll-down {
+  background-color: rgb(89, 89, 92);
+
+  nav {
+    ul {
+        color: white;
+    }
+  }
+
 }
