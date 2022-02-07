@@ -5,12 +5,12 @@
       const scroll = this.document.documentElement.scrollTop;
     
       if (scroll > 10) {
-        navbar.style.height = "7vh";
-        navElements.style.height = "2vh";
+        navbar.style.height = "70px";
+        navElements.style.height = "24px";
         navbar.style.background = "#fdfedb";
       } else {
-        navbar.style.height = "10vh";
-        navElements.style.height = "3vh";
+        navbar.style.height = "70px";
+        navElements.style.height = "24px";
         navbar.style.background = "#fdfedb00"
       }
     });
