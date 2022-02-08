@@ -1,4 +1,4 @@
-$transition-time-navbar: 0.4s;
+$transition-time-navbar: 0.3s;
 
 
 header {
@@ -15,10 +15,11 @@ header {
 
   figure {
     img {
-      width: 7rem;
+      width: 8.5rem;
       height: auto;
       margin: $margin-navbar-top-down 0 $margin-navbar-top-down
         $margin-navbar-left-right;
+        transition: width $transition-time-navbar ease-in-out;
     }
   }
 }
@@ -35,13 +36,18 @@ nav {
     font-weight: bold;
     letter-spacing: $letter-spacing-navbar;
 
-    transition: background-color $transition-time-navbar ease-in-out, color $transition-time-navbar ease-in-out ;
+    transition: color $transition-time-navbar ease-in-out ;
   }
 }
 
 
 .scroll-down {
-  background-color: rgb(89, 89, 92);
+  background-color: rgba(89, 89, 92, 0.97);
+  figure {
+    img {
+      width: 5rem;
+    }
+  }
 
   nav {
     ul {

@@ -1,7 +1,7 @@
 "use strict";
 
-let parallaxContainer = document.getElementById("parallax-container");
-let navbar = document.getElementById("header");
+let parallaxContainer = document.querySelector(".js-parallax-container");
+let navbar = document.querySelector(".js-header-parallax");
 
 /* onscroll function */
 parallaxContainer.addEventListener('scroll', function () {
