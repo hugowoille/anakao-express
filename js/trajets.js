@@ -1,5 +1,28 @@
 "use strict";
 
+// can also do : (need to add: id="mapwithbutton" to the 'main container')
+// document.getElementById("mapwithbutton").addEventListener("click", funcPrincipalChange);
+
+// array so need to get the key.
+// can also use :
+// document.querySelectorAll('.js-buttons-container')[0];
+// Or
+// let mainMap = document.getElementsByClassName('js-buttons-map')[0];
+// mainMap.addEventListener("click", funcPrincipalChange);
+document.querySelector(".js-buttons-container").addEventListener("click", funcPrincipalChange);
+
+/* ---------------------------- */
+const buttonNodeList = document.querySelectorAll(".general__button");
+// All buttons
+
+const imgToChange = document.querySelectorAll(".js-trajets__img");
+const hToChange = document.querySelectorAll(".js-trajets__h2");
+const pToChange = document.querySelectorAll(".js-trajets__p");
+//list of all img, h2, p element to change content from,
+// select them with nodelist index
+/* ---------------------------- */
+
+
 // CONTENT------------------------------------------------------------------
 let imgTrajetsArray = [
   "img/trajets/temp_isole-madagascar_d.jpg.image.1296.974.high.jpg",
@@ -20,8 +43,6 @@ let pTrajetsArray = [
 function addAndRemoveEffect(clickedButton, buttonClassToSkip, classToAddAndRemove) {
   clickedButton.classList.add(classToAddAndRemove);
 
-  let buttonNodeList = document.querySelectorAll(".general__button");
-  // All buttons
   for (let i = 0; i < buttonNodeList.length; i++) {
     if (buttonNodeList[i].classList.contains(buttonClassToSkip)) {
       continue;
@@ -31,17 +52,10 @@ function addAndRemoveEffect(clickedButton, buttonClassToSkip, classToAddAndRemov
     }
   }
 }
-// ----------------------------------------------------
-
+/* ---------------------------- */
 function fadeInAndOutChangeContent(fadeclass, eIndexNum, cIndexNum, classSelector) {
   let articleToFade = document.querySelector(classSelector);
   articleToFade.classList.add(fadeclass);
-
-  let imgToChange = document.querySelectorAll(".js-trajets__img");
-  let hToChange = document.querySelectorAll(".js-trajets__h2");
-  let pToChange = document.querySelectorAll(".js-trajets__p");
-  //list of all img, h2, p element to change content from,
-  // select them with nodelist index
 
   setTimeout(function () {
     imgToChange[eIndexNum].src = imgTrajetsArray[cIndexNum];
