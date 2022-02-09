@@ -99,10 +99,13 @@
     25% {
         transform: translateX(-600px);
     }
-    75% {
+    50% {
         transform: translateX(-1200px);
     }
-    100% {
+    75% {
         transform: translateX(-1800px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
