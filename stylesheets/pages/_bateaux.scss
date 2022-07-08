@@ -92,7 +92,7 @@ html{
     max-width: 100%;
     display: flex;
     justify-content: center;
-    text-align: center;
+
     flex-wrap: wrap;
     gap: 20px;
     li {
@@ -108,8 +108,7 @@ html{
             text-align: center;
             font-family: $font-p;
             font-size: 1.4rem;
-            align-items: center;
-            justify-items: center;
+            
         }
     }
 }
